@@ -146,6 +146,13 @@ body {
   }
 }
 
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .signUp {
+    width: 60.5%;
+    margin-top: 1rem;
+  }
+}
+
 /* Attribution */
 footer {
   padding-top: 1rem;
