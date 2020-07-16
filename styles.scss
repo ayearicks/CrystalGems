@@ -1,0 +1,454 @@
+/* Fonts */
+@font-face {
+    font-family: "Crystal Regular";
+    src: url('../fonts/crystaluniverse-regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Crystal Oblique";
+    src: url('../fonts/crystaluniverse-oblique.ttf') format('truetype');
+    font-weight: 400;
+}
+
+
+/* Variables */
+$rootBeer: #1f0c07;
+$steven: #fb5b68;
+$lemon: #ffeb48;
+$lapis: #2676a1;
+$melon: #ffbdb0;
+$pink: #fa74bf;
+$white: #fff;
+
+
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: $steven;
+    color: $rootBeer;
+}
+
+
+/* Logos */
+.logos {
+    padding: 1rem .5rem;
+    text-align: center;
+
+    .starLogo {
+        color: $lemon;
+        font-size: 2em;
+        text-shadow: 5px 10px 10px $rootBeer;
+    }
+
+    .textLogo {
+        font-family: "Crystal Regular", sans-serif;
+        color: $lemon;
+        text-shadow: 5px 10px 10px $rootBeer;
+        font-size: 24px;
+        line-height: 2;
+    }
+}
+
+
+/* Main Container */
+.main {
+    background-color: $white;
+    width: 90%;
+    min-height: 78vh;
+    margin: 2.5rem auto 0 auto;
+    border-radius: 5rem;
+}
+
+
+.headingText {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px $rootBeer;
+    
+    #groupPhoto {
+        max-width: 80%;
+        margin: -3.5rem auto;
+        z-index: 1;
+    }
+
+    h1 {
+        color: $lapis;
+        font-size: 40px;
+        margin: 2.5rem 0 0 0;
+    }
+
+    h2 {
+        color: $pink;
+        font-size: 30px;
+        margin: -.5rem 0 .5rem 0;
+    }
+}
+
+/* Message to Customers */
+.description {
+    padding: 1px 8px;
+    font-weight: 600;
+
+    .miniHeading {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    span {
+        color: $pink;
+    }
+
+    span:nth-of-type(2) {
+        color: $steven;
+        font-weight: 700;
+    }
+}
+
+/* Email Form */
+.signUp {
+    margin: 0 auto;
+    width: 80%;
+
+    form {
+        margin: 0 .5rem;
+    }
+
+    form input {
+        margin: 0 auto;
+        border: 5px inset $melon;
+        border-radius: 20px;
+        background-color: $melon;
+        color: $rootBeer;
+        text-align: center;
+    }
+
+    form button {
+        margin: .5rem 4rem;
+        text-align: center;
+        background-color: $melon;
+        color: #807d7d;
+        border: 5px inset $melon;
+        border-radius: 10px;
+    }
+
+    form button:hover {
+        border: 5px solid $melon;
+    }
+}
+
+/* Attribution */
+footer {
+    padding-top: 1rem;
+}
+
+.attribution {
+    text-align: center;
+    color: $melon;
+    font-size: 10px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: $melon;
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+
+}
+
+
+
+// @media screen and (max-width: 375px) {
+//   html {
+//       height: 100%;
+//   }
+
+//   .heading {
+//       opacity: 0.9;
+//       height: 1.3rem;
+//       padding: 1.75rem;
+//   }
+
+//   .model {
+//       width: 25rem;
+//       padding: 0;
+//       margin-left: -5px;
+//       height: 15.6rem;
+//   }
+
+//   .model2 {
+//       display: none;
+//   }
+
+//   h1 {
+//       opacity: 0.75;
+//       text-transform: uppercase;
+//       font-size: 40px;
+//       letter-spacing: .3em;
+//       text-align: center;
+//       padding-top: 2.5rem;
+//   }
+
+//   span {
+//       color: hsl(0, 36%, 70%);
+//       font-weight: 300;
+//   }
+
+//   .announceText {
+//       color: hsl(0, 36%, 70%);
+//       opacity: 0.75;
+//       font-weight: 600;
+//       font-size: 16px;
+//       line-height: 1.5em;
+//       text-align: center;
+//       margin: .5em;
+//   }
+
+//   .formBox {
+//       border: 1px solid hsl(0, 20%, 80%);
+//       border-radius: 20px;
+//       margin: 0 auto;
+//       width: 85%;
+//       height: 2.5rem;
+//       margin-bottom: 50px;
+//   }
+
+//   input {
+//       border: 0;
+//       background-color: hsl(0, 100%, 98%);
+//       opacity: 0.40;
+//       text-align: center;
+//       margin-top: 10px;
+//   }
+
+//   input::placeholder {
+//       color: hsl(0, 36%, 70%);
+//       font-size: 16px;
+//   }
+
+//   input:focus {
+//       outline: none;
+//   }
+
+//   button {
+//       background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+//       width: 5em;
+//       height: 3em;
+//       border-radius: 18px;
+//       border: 0;
+//       float: right;
+//       padding: 0;
+//       opacity: .95;
+//   }
+
+//   .attribution {
+//       padding: 0;
+//       margin: 0;
+//       text-align: center;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+//   .attribution a {
+//       text-decoration: none;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+// }
+
+// @media all and (min-width: 376px) and (max-width: 1199px) {
+
+//   .heading {
+//       width: 12rem;
+//       margin: 2.5em;
+//   }
+
+//   .model {
+//       width: 100%;
+//   }
+
+//   .model2 {
+//       display: none;
+//   }
+
+//   h1 {
+//       opacity: 0.75;
+//       text-transform: uppercase;
+//       font-size: 40px;
+//       letter-spacing: .3em;
+//       text-align: center;
+//       padding-top: 2.5rem;
+//   }
+
+//   span {
+//       color: hsl(0, 36%, 70%);
+//       font-weight: 300;
+//   }
+
+//   .announceText {
+//       color: hsl(0, 36%, 70%);
+//       opacity: 0.75;
+//       font-weight: 600;
+//       font-size: 16px;
+//       line-height: 1.5em;
+//       text-align: center;
+//       margin: .5em;
+//   }
+
+//   .formBox {
+//       border: 1px solid hsl(0, 20%, 80%);
+//       border-radius: 20px;
+//       margin: 0 auto;
+//       width: 85%;
+//       height: 2.5rem;
+//       margin-bottom: 50px;
+//   }
+
+//   input {
+//       width: 60%;
+//       height: 2.5rem;
+//       background-color: hsl(0, 0%, 98%);
+//       border: 0;
+//       opacity: 0.40;
+//       text-align: center;
+//       margin-top: 0px;
+//   }
+
+//   input::placeholder {
+//       color: hsl(0, 36%, 70%);
+//       font-size: 16px;
+//   }
+
+//   input:focus {
+//       outline: none;
+//   }
+
+//   button {
+//       background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+//       width: 5rem;
+//       height: 2.5rem;
+//       border-radius: 18px;
+//       border: 0;
+//       float: right;
+//       padding: 0;
+//       opacity: .95;
+//   }
+
+//   .attribution {
+//       padding: 0;
+//       margin: 0;
+//       text-align: center;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+//   .attribution a {
+//       text-decoration: none;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+// }
+
+// @media all and (min-width: 1200px) {
+//   .heading {
+//       width: 13rem;
+//       margin: 5em 0 0 9em;
+//   }
+
+//   .model {
+//       display: none;
+//   }
+
+//   .model2 {
+//       float: right;
+//   }
+
+//   .bannerText {
+//       width: 500px;
+//       margin-left: 3.5em;
+//       margin-top: 3em;
+//       font-size: 40px;
+//       letter-spacing: .5em;
+//   }
+
+//   span {
+//       color: hsl(0, 36%, 70%);
+//       font-weight: 300;
+//   }
+
+//   .announceText {
+//       color: hsl(0, 36%, 70%);
+//       width: 450px;
+//       opacity: 0.75;
+//       font-weight: 600;
+//       font-size: 16px;
+//       line-height: 2em;
+//       margin-left: 9em;
+//       margin-bottom: 2.5em;
+//   }
+
+//   .formBox {
+//       border: 2px solid hsl(0, 20%, 80%);
+//       border-radius: 35px;
+//       margin-left: 10rem;
+//       width: 30%;
+//       height: 3.5rem;
+//   }
+
+//   input {
+//       width: 100%;
+//       height: 2.5rem;
+//       background-color: hsl(0, 0%, 98%);
+//       border: 0;
+//       text-align: center;
+//       margin-top: 8px;
+//       margin-left: 10px;
+//   }
+
+//   input::placeholder {
+//       color: hsl(0, 36%, 70%);
+//       font-size: 16px;
+//       opacity: .6;
+//   }
+
+//   input:focus {
+//       outline: none;
+//   }
+
+//   button {
+//       background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+//       width: 7rem;
+//       height: 4.5rem;
+//       border-radius: 35px;
+//       border: 0;
+//       float: right;
+//       margin-right: -5px;
+//       margin-top: -2px;
+//       opacity: 0.95;
+//   }
+
+//   footer {
+//       padding-top: 6em;
+//   }
+
+//   .attribution {
+//       margin: 0;
+//       text-align: center;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+//   .attribution a {
+//       text-decoration: none;
+//       color: hsl(0, 36%, 70%);
+//   }
+
+// }
