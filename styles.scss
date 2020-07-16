@@ -56,7 +56,8 @@ body {
     width: 90%;
     min-height: 78vh;
     margin: 2.5rem auto 0 auto;
-    border-radius: 5rem;
+    border-radius: 5.5rem;
+    box-shadow: 5px 5px 15px 2px rgba(0,0,0,.5);
 }
 
 
@@ -84,6 +85,14 @@ body {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .headingText {
+        #groupPhoto {
+            margin: -2.5rem auto -2.5rem -1rem;
+        }
+    }
+}
+
 /* Message to Customers */
 .description {
     padding: 1px 8px;
@@ -103,6 +112,12 @@ body {
     span:nth-of-type(2) {
         color: $steven;
         font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .description {
+        text-align: center;
     }
 }
 
@@ -137,6 +152,14 @@ body {
         border: 5px solid $melon;
     }
 }
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .signUp {
+        width: 65%;
+        margin-top: 1rem;
+    }
+}
+
 
 /* Attribution */
 footer {
