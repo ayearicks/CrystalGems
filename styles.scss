@@ -1,14 +1,16 @@
 /* Fonts */
 @font-face {
-    font-family: "Crystal Regular";
-    src: url('../fonts/crystaluniverse-regular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Crystal Universe';
+    src: url('../fonts/CrystalUniverse-Regular.woff2') format('woff2'),
+        url('../fonts/CrystalUniverse-Regular.woff') format('woff'),
+        url('../fontsCrystalUniverse-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
-@font-face {
-    font-family: "Crystal Oblique";
-    src: url('../fonts/crystaluniverse-oblique.ttf') format('truetype');
-    font-weight: 400;
-}
+
+
+
 
 /* ALL STYLES ARE FOR 320PX VIEWPORT UNLESS MEDIA QUERY IS APPLIED */
 
@@ -42,7 +44,7 @@ body {
     }
 
     .textLogo {
-        font-family: "Crystal Regular", sans-serif;
+        font-family: 'Crystal Universe', sans-serif;
         color: $lemon;
         text-shadow: 5px 10px 10px $rootBeer;
         font-size: 24px;
