@@ -123,7 +123,7 @@ body {
 @media screen and (min-width: 745px) {
     .headingText {
         #groupPhoto {
-            max-width: 80%;
+            max-width: 50%;
             max-height: 80vh;
             margin: -1.5rem auto -1rem -2rem;
         }
@@ -135,7 +135,7 @@ body {
     .headingText {
         #groupPhoto {
             margin: -2.5rem 0 -10rem -45rem;
-            max-height: 30vh;
+            max-height: 40vh;
             transform: rotate(-5deg);
         }
 
@@ -149,13 +149,25 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .headingText {
         #groupPhoto {
-            margin: -2.5rem 0 -10rem -60rem;
+            margin: -15rem 0 -10rem -42.5rem;
+            max-height: 35vh;
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .headingText {
+        #groupPhoto {
+            max-height: 45vh;
+            margin-left: -50rem;
+        }
+    }
+}
+
+// @media (min-width: )
 
 
 /* Message to Customers */
@@ -202,11 +214,11 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .description {
         .text {
             padding-top: 2rem;
-            width: 40%;
+            width: 60%;
         }
     }
 }
@@ -278,9 +290,10 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .signUp {
         padding-top: 2rem;
+        padding-bottom: 6rem;
     }
 }
 
@@ -297,11 +310,18 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .stevenShield {
         display: block;
-        max-width: 15%;
-        margin: -15rem 0 -3.5rem 80rem;
+        max-width: 20%;
+        margin: -10rem 0 -3.5rem 50rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .stevenShield {
+        margin-left: 57rem;
+        margin-top: -15rem;
     }
 }
 
@@ -320,4 +340,11 @@ footer {
 .attribution a {
     text-decoration: none;
     color: $melon;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        max-width: 40%;
+        margin: -0 auto;
+    }
 }
