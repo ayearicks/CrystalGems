@@ -51,4 +51,4 @@ This project gave me practice with manipulating images for different breakpoints
 ## Author
 
 - Website - [Ashley Yearicks](https://yearicks.dev)
-- Twitter - [@jessarin5](https://www.twitter.com/jessarin5)
+- Email - [ashley.yearicks@gmail.com](mailto:ashley.yearicks@gmail.com)
